@@ -9,14 +9,19 @@ header{
 
 .containertopo{
     display: flex;
-    background-color: greenyellow;
+    background-color: #82ABEE;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
+.conteudotopo{
+    display: flex;
+    flex-direction: row;
+}
+
 .inputtopo{
-    width: 50%;
+    width: 600px;
     border: 2px solid black;
     padding: 10px;
 }
@@ -24,6 +29,7 @@ header{
 .botaopesquisar{
     background-color: white;
     border: 2px solid black;
+    padding: 5px;
     height: 35px;
     margin-left: 5px;
 }
@@ -35,9 +41,9 @@ header{
 
 .containerprodutos{
     display: grid;
-    background-color: chocolate;
-    margin: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    background-color: #c6d3e7;
+    margin: 1%;
+    grid-template-columns: repeat(auto-fit, 260px);
 }
 
 .produto{
@@ -48,7 +54,7 @@ header{
     padding: 20px;
     margin: 20px;
     border: 2px solid black;
-    background-color: aliceblue;
+    background-color: white;
     width: 200px;
     height: 300px;
 }
