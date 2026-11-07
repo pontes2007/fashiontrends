@@ -1,0 +1,18 @@
+[
+    {
+        "nome": "computador",
+        "valor": 2499.99,
+        "imagem": "imagensdosprodutos/Notebook.png",
+        "alt": "Notebook acer em cima de uma mesa de madeira",
+        "descricao": "computador"
+    }, {
+        "nome": "lápis",
+        "valor": 300,
+        "imagem": "imagensdosprodutos/kyoshi2.jpg",
+        "descricao": "lápis"
+    }, {
+        "nome": "Barco",
+        "valor": 1500,
+        "imagem": "imagensdosprodutos/barco.webp",
+        "descricao": "corretivo"
+    }
