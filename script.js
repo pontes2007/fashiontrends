@@ -12,8 +12,8 @@ function criarProduto(nome, valor, imagem, descricao){
   let valorcontainer = document.createElement("div")
 
   novoProduto.classList.add("produto")
-  imagemcontainer.classList.add("imagemcontainer")
-  imagememsi.classList.add("imagemproduto")
+  imagemcontainer.classList.add("imagemprodutocontainer")
+  imagememsi.classList.add("imagensemsi")
   imagememsi.src = imagem
   imagememsi.alt = descricao
   nomecontainer.innerText = nome

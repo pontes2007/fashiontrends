@@ -10,7 +10,7 @@ header{
 .containertopo{
     display: flex;
     background-color: #82ABEE;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     padding: 20px;
 }
@@ -30,13 +30,39 @@ header{
     background-color: white;
     border: 2px solid black;
     padding: 5px;
-    height: 35px;
+    height: 45px;
     margin-left: 5px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 .imagemdobotaopesquisar{
     max-width: 100%;
     max-height: 100%;
+}
+
+.botaologin{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 0px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.containercarrinho{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #a7c5f7;
+    cursor: pointer;
+}
+
+.imagemcarrinhocontainer{
+    height: 35px;
 }
 
 .containerprodutos{
@@ -57,14 +83,15 @@ header{
     background-color: white;
     width: 200px;
     height: 300px;
+    cursor: pointer;
 }
 
-.imagemcontainer{
+.imagemprodutocontainer{
     border-radius: 10px;
     height: 180px;
 }
 
-.imagemproduto{
+.imagensemsi{
     max-width: 100%;
     max-height: 100%;
 }
