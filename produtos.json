@@ -1,19 +1,201 @@
 [
-    {
-        "nome": "computador",
-        "valor": 2499.99,
-        "imagem": "imagensdosprodutos/Notebook.png",
-        "alt": "Notebook acer em cima de uma mesa de madeira",
-        "descricao": "computador"
-    }, {
-        "nome": "lápis",
-        "valor": 300,
-        "imagem": "imagensdosprodutos/kyoshi2.jpg",
-        "descricao": "lápis"
-    }, {
-        "nome": "Barco",
-        "valor": 1500,
-        "imagem": "imagensdosprodutos/barco.webp",
-        "descricao": "corretivo"
+  {
+    "id": "PROD001",
+    "nome": "Notebook UltraBook Pro 15",
+    "categoria": "Informática",
+    "descricao": "Notebook desenvolvido para produtividade, estudos e entretenimento. Possui tela de 15,6 polegadas Full HD, processador de alto desempenho, 16 GB de memória RAM e SSD de 512 GB. Seu design fino e leve facilita o transporte, enquanto sua bateria de longa duração permite trabalhar por várias horas sem precisar de carregamento.",
+    "valor": 4299.90,
+    "estoque": 18,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 6
+    },
+    "marca": "TechNova",
+    "imagem": "imagensdosprodutos/computador.png"
+  }, {
+    "id": "PROD002",
+    "nome": "Headset Bluetooth SoundMax",
+    "categoria": "Áudio",
+    "descricao": "Fone de ouvido sem fio com tecnologia Bluetooth 5.3, cancelamento de ruído e almofadas acolchoadas para maior conforto. Oferece até 35 horas de autonomia de bateria e possui microfone integrado para chamadas. Compatível com computadores, celulares e tablets.",
+    "valor": 349.90,
+    "estoque": 42,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 5
+    },
+    "marca": "SoundMax",
+    "imagem": "imagensdosprodutos/fone.png"
+  }, {
+    "id": "PROD003",
+    "nome": "Smartphone Vision X12",
+    "categoria": "Smartphones",
+    "descricao": "Smartphone equipado com tela AMOLED de 6,7 polegadas, resolução Full HD+, 256 GB de armazenamento interno e 8 GB de memória RAM. Conta com câmera principal de 50 MP, câmera frontal de 16 MP e bateria de 5.000 mAh. Ideal para fotografias, vídeos, jogos e utilização cotidiana.",
+    "valor": 2799.90,
+    "estoque": 25,
+    "entrega": {
+      "min_dias_uteis": 4,
+      "max_dias_uteis": 7
+    },
+    "marca": "VisionTech",
+    "imagem": "imagensdosprodutos/celular.png"
+  }, {
+    "id": "PROD004",
+    "nome": "Smartwatch Active S5",
+    "categoria": "Acessórios",
+    "descricao": "Relógio inteligente com tela touchscreen de 1,9 polegadas, monitoramento de atividades físicas, contador de passos e acompanhamento do sono. Possui resistência à água para uso cotidiano, notificações de celular e bateria com autonomia estimada de até 7 dias.",
+    "valor": 499.90,
+    "estoque": 31,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 4
+    },
+    "marca": "ActiveWear",
+    "imagem": "imagensdosprodutos/relogiodigital.png"
+  }, {
+    "id": "PROD005",
+    "nome": "Fone Bluetooth AirSound Mini",
+    "categoria": "Áudio",
+    "descricao": "Fone de ouvido compacto e sem fio, desenvolvido para proporcionar praticidade durante atividades diárias. Possui conexão Bluetooth 5.2, estojo de carregamento portátil e microfone integrado. Oferece aproximadamente 5 horas de reprodução contínua e até 20 horas considerando as recargas do estojo.",
+    "valor": 189.90,
+    "estoque": 56,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 5
+    },
+    "marca": "AirSound",
+    "imagem": "imagensdosprodutos/ipod.png"
+  }, {
+    "id": "PROD006",
+    "nome": "Mouse Gamer Phantom RGB",
+    "categoria": "Periféricos",
+    "descricao": "Mouse gamer com sensor óptico de até 12.000 DPI, iluminação RGB personalizável e seis botões programáveis. Possui formato ergonômico, cabo reforçado e pés de baixo atrito para proporcionar movimentos suaves. Compatível com Windows e Linux.",
+    "valor": 159.90,
+    "estoque": 73,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 4
+    },
+    "marca": "Phantom Gaming",
+    "imagem": "imagensdosprodutos/mouse.png"
+  }, {
+    "id": "PROD007",
+    "nome": "Teclado Mecânico RGB K87",
+    "categoria": "Periféricos",
+    "descricao": "Teclado mecânico compacto com 87 teclas, iluminação RGB configurável e switches mecânicos projetados para oferecer resposta rápida. Sua estrutura resistente e seu formato reduzido proporcionam mais espaço para movimentação do mouse. Possui conexão USB e compatibilidade com computadores.",
+    "valor": 279.90,
+    "estoque": 29,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 5
+    },
+    "marca": "KeyMaster",
+    "imagem": "imagensdosprodutos/teclado.png"
+  }, {
+    "id": "PROD008",
+    "nome": "Mochila Urban Explorer",
+    "categoria": "Bolsas e Mochilas",
+    "descricao": "Mochila moderna com capacidade de 25 litros, compartimento acolchoado para notebooks de até 15,6 polegadas e diversos bolsos organizadores. Fabricada com tecido resistente à água, possui alças ajustáveis e painel traseiro acolchoado. Indicada para estudos, trabalho e viagens curtas.",
+    "valor": 219.90,
+    "estoque": 38,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 6
+    },
+    "marca": "UrbanWay",
+    "imagem": "imagensdosprodutos/mochila.png"
+  }, {
+    "id": "PROD009",
+    "nome": "Garrafa Térmica Steel 750",
+    "categoria": "Utilidades",
+    "descricao": "Garrafa térmica com capacidade de 750 ml, fabricada em aço inoxidável de alta resistência. Sua estrutura de parede dupla ajuda a conservar a temperatura das bebidas por várias horas. Possui tampa rosqueável com vedação contra vazamentos e acabamento externo fosco.",
+    "valor": 89.90,
+    "estoque": 91,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 5
+    },
+    "marca": "SteelLife",
+    "imagem": "imagensdosprodutos/garrafa.png"
+  }, {
+    "id": "PROD010",
+    "nome": "Caixa de Som Portable Bass",
+    "categoria": "Áudio",
+    "descricao": "Caixa de som portátil com conexão Bluetooth 5.3, potência de 20 W e sistema de áudio estéreo. Possui bateria recarregável com autonomia de até 12 horas, estrutura compacta e resistência à água com classificação IPX5. Ideal para ambientes internos e atividades ao ar livre.",
+    "valor": 239.90,
+    "estoque": 47,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 5
+    },
+    "marca": "BassWave",
+    "imagem": "imagensdosprodutos/caixadesom.png"
+  }, {
+    "id": "PROD011",
+    "nome": "Kit de Construção City Explorer",
+    "categoria": "Brinquedos",
+    "descricao": "Kit de construção composto por 420 peças encaixáveis, incluindo blocos coloridos, acessórios e componentes para montar veículos e estruturas urbanas. Estimula a criatividade, a coordenação motora e o raciocínio lógico. Recomendado para crianças a partir de 6 anos.",
+    "valor": 149.90,
+    "estoque": 22,
+    "entrega": {
+      "min_dias_uteis": 4,
+      "max_dias_uteis": 7
+    },
+    "marca": "BuildFun",
+    "imagem": "imagensdosprodutos/lego.png"
+  }, {
+    "id": "PROD012",
+    "nome": "Livro Sapiens: Uma Breve História da Humanidade",
+    "categoria": "Livros",
+    "descricao": "Livro de divulgação histórica que apresenta uma análise da evolução da humanidade, abordando transformações sociais, culturais, econômicas e tecnológicas ao longo dos séculos. Possui edição impressa em capa comum, aproximadamente 500 páginas e formato confortável para leitura.",
+    "valor": 59.90,
+    "estoque": 64,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 6
+    },
+    "marca": "Editora Horizonte",
+    "imagem": "imagensdosprodutos/livro.png"
+  }, {
+    "id": "PROD013",
+    "nome": "Moletom Basic Comfort",
+    "categoria": "Vestuário",
+    "descricao": "Moletom com capuz confeccionado em tecido misto de algodão e poliéster, oferecendo conforto e resistência para o uso cotidiano. Possui bolso frontal estilo canguru, punhos ajustados e cordões reguláveis no capuz.",
+    "valor": 129.90,
+    "estoque": 85,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 6
+    },
+    "marca": "ComfortWear",
+    "imagem": "imagensdosprodutos/casaco.png",
+    "variacoes": {
+      "tamanhos": ["P", "M", "G", "GG"]
     }
+  }, {
+    "id": "PROD014",
+    "nome": "Controle Wireless GamePad X",
+    "categoria": "Games e Acessórios",
+    "descricao": "Controle sem fio com conexão Bluetooth, botões responsivos, dois analógicos, gatilhos adaptáveis e sistema de vibração. Possui bateria recarregável com autonomia aproximada de 10 horas e design ergonômico para utilização prolongada. Compatível com computadores e dispositivos selecionados.",
+    "valor": 319.90,
+    "estoque": 34,
+    "entrega": {
+      "min_dias_uteis": 2,
+      "max_dias_uteis": 5
+    },
+    "marca": "GameZone",
+    "imagem": "imagensdosprodutos/controledeps5.png"
+  }, {
+    "id": "PROD015",
+    "nome": "Luminária Articulada Modern Desk",
+    "categoria": "Casa e Decoração",
+    "descricao": "Luminária de mesa com estrutura metálica articulada, permitindo ajustar a direção da iluminação conforme a necessidade. Possui base estável, acabamento preto fosco e soquete compatível com lâmpadas LED. Indicada para mesas de estudo, escritórios e ambientes de leitura.",
+    "valor": 119.90,
+    "estoque": 27,
+    "entrega": {
+      "min_dias_uteis": 3,
+      "max_dias_uteis": 5
+    },
+    "marca": "ModernLight",
+    "imagem": "imagensdosprodutos/lampada.png"
+  }
 ]

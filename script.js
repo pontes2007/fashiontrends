@@ -30,33 +30,29 @@ function criarProduto(nome, valor, imagem, descricao){
   novoProduto.appendChild(valorcontainer)
 }
 
-function carregarProdutos(filtrar){
-  fetch("./produtos.json").then((response) => {
-    response.json().then((produtos) => {
-      for (let i = 0; i < produtos.length; i++){
-        if (filtrar){
-          if (compararTextos(input.value.toLowerCase(), produtos[i]["nome"].toLowerCase())){
-            criarProduto(produtos[i]["nome"], produtos[i]["valor"], produtos[i]["imagem"], produtos[i]["descricao"])
-          }
-        } else{
-          criarProduto(produtos[i]["nome"], produtos[i]["valor"], produtos[i]["imagem"], produtos[i]["descricao"])
-        }
-      }
-    });
-  });
-}
-
-carregarProdutos(false)
-
 function compararTextos(comparado, referencia){
   for (let i = 0; i < comparado.length; i++){
-    console.log(comparado[i] + " = " + referencia[i])
     if (!(comparado[i] == referencia[i])){
       return false
     }
   }
   return true
 }
+
+function carregarProdutos(filtrar){
+  fetch("./produtos.json").then((response) => {
+    response.json().then((produtos) => {
+      produtos.map((produto) => {
+        filtrar
+        ? compararTextos(input.value.toLowerCase(), produto["nome"].toLowerCase())
+          && criarProduto(produto["nome"], produto["valor"], produto["imagem"], produto["descricao"])
+        : criarProduto(produto["nome"], produto["valor"], produto["imagem"], produto["descricao"])
+      })
+    });
+  });
+}
+
+carregarProdutos(false)
 
 function pesquisar(){
   div.innerHTML = ''
