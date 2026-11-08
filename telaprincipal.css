@@ -23,14 +23,14 @@ header{
 .inputtopo{
     width: 600px;
     border: 2px solid black;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .botaopesquisar{
     background-color: white;
     border: 2px solid black;
     padding: 5px;
-    height: 45px;
+    height: 40px;
     margin-left: 5px;
     margin-right: 25px;
     cursor: pointer;
@@ -56,7 +56,7 @@ header{
     align-items: center;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0px 10px;
     background-color: #a7c5f7;
     cursor: pointer;
 }
