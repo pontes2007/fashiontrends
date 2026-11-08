@@ -1,4 +1,6 @@
 const div = document.querySelector(".containerprodutos")
+const botaopesquisar = document.querySelector(".botaopesquisar")
+const input = document.querySelector(".inputtopo")
 
 function converterReais(chave){
   return "R$" + (chave.toFixed(2)).toString()
@@ -28,11 +30,38 @@ function criarProduto(nome, valor, imagem, descricao){
   novoProduto.appendChild(valorcontainer)
 }
 
-fetch("./produtos.json").then((response) => {
-  response.json().then((produtos) => {
-    for (let i = 0; i < produtos.length; i++){
-      criarProduto(produtos[i]["nome"], produtos[i]["valor"], produtos[i]["imagem"], produtos[i]["descricao"])
-    }
+function carregarProdutos(filtrar){
+  fetch("./produtos.json").then((response) => {
+    response.json().then((produtos) => {
+      for (let i = 0; i < produtos.length; i++){
+        if (filtrar){
+          if (compararTextos(input.value.toLowerCase(), produtos[i]["nome"].toLowerCase())){
+            criarProduto(produtos[i]["nome"], produtos[i]["valor"], produtos[i]["imagem"], produtos[i]["descricao"])
+          }
+        } else{
+          criarProduto(produtos[i]["nome"], produtos[i]["valor"], produtos[i]["imagem"], produtos[i]["descricao"])
+        }
+      }
+    });
   });
-});
+}
+
+carregarProdutos(false)
+
+function compararTextos(comparado, referencia){
+  for (let i = 0; i < comparado.length; i++){
+    console.log(comparado[i] + " = " + referencia[i])
+    if (!(comparado[i] == referencia[i])){
+      return false
+    }
+  }
+  return true
+}
+
+function pesquisar(){
+  div.innerHTML = ''
+  carregarProdutos(true)
+}
+
+botaopesquisar.addEventListener("click", pesquisar)
 
