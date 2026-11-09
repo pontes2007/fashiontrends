@@ -6,7 +6,14 @@ function converterReais(chave){
   return "R$" + (chave.toFixed(2)).toString()
 }
 
-function criarProduto(nome, valor, imagem, descricao){
+function dadosDoProduto(dados){
+  console.log(dados.nome)
+
+  sessionStorage.setItem("nome", dados.nome)
+  window.location.href = "produto.html"
+}
+
+function criarProduto(info){
   let novoProduto = document.createElement("div")
   let imagemcontainer = document.createElement("div")
   let imagememsi = document.createElement("img")
@@ -16,11 +23,11 @@ function criarProduto(nome, valor, imagem, descricao){
   novoProduto.classList.add("produto")
   imagemcontainer.classList.add("imagemprodutocontainer")
   imagememsi.classList.add("imagensemsi")
-  imagememsi.src = imagem
-  imagememsi.alt = descricao
-  nomecontainer.innerText = nome
+  imagememsi.src = info.imagem
+  imagememsi.alt = info.descricao
+  nomecontainer.innerText = info.nome
   nomecontainer.classList.add("nomedoproduto")
-  valorcontainer.innerText = converterReais(valor)
+  valorcontainer.innerText = converterReais(info.valor)
   valorcontainer.classList.add("valorproduto")
 
   div.appendChild(novoProduto)
@@ -28,6 +35,7 @@ function criarProduto(nome, valor, imagem, descricao){
   imagemcontainer.appendChild(imagememsi)
   novoProduto.appendChild(nomecontainer)
   novoProduto.appendChild(valorcontainer)
+  novoProduto.addEventListener("click", () => {dadosDoProduto(info)})
 }
 
 function compararTextos(comparado, referencia){
@@ -45,8 +53,8 @@ function carregarProdutos(filtrar){
       produtos.map((produto) => {
         filtrar
         ? compararTextos(input.value.toLowerCase(), produto["nome"].toLowerCase())
-          && criarProduto(produto["nome"], produto["valor"], produto["imagem"], produto["descricao"])
-        : criarProduto(produto["nome"], produto["valor"], produto["imagem"], produto["descricao"])
+          && criarProduto(produto)
+        : criarProduto(produto)
       })
     });
   });
