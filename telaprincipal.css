@@ -72,6 +72,11 @@ header{
     max-height: 100%;
 }
 
+.alerta{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
 .containerprodutos{
     display: grid;
     background-color: #c6d3e7;
