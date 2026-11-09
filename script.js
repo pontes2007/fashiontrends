@@ -1,6 +1,7 @@
 const div = document.querySelector(".containerprodutos")
 const botaopesquisar = document.querySelector(".botaopesquisar")
 const input = document.querySelector(".inputpesquisa")
+const alerta = document.querySelector(".alerta")
 
 function converterReais(chave){
   return "R$" + (chave.toFixed(2)).toString()
@@ -47,17 +48,27 @@ function compararTextos(comparado, referencia){
   return true
 }
 
-function carregarProdutos(filtrar){
-  fetch("./produtos.json").then((response) => {
-    response.json().then((produtos) => {
-      produtos.map((produto) => {
-        filtrar
-        ? compararTextos(input.value.toLowerCase(), produto["nome"].toLowerCase())
-          && criarProduto(produto)
-        : criarProduto(produto)
-      })
-    });
-  });
+async function carregarProdutos(filtrar){
+  encontrado = false
+  const response = await fetch("./produtos.json")
+  const produtos = await response.json()
+  produtos.map((produto) => {
+    if (filtrar){
+      if (compararTextos(input.value.toLowerCase(), produto["nome"].toLowerCase())){
+        criarProduto(produto)
+        encontrado = true
+      }
+    } else {
+      criarProduto(produto)
+      encontrado = true
+    }
+  })
+  if (encontrado == false){
+    console.log("Produto não encontrado")
+    alerta.innerHTML = "Produto não encontrado"
+  } else {
+    alerta.innerHTML = ""
+  }
 }
 
 carregarProdutos(false)
