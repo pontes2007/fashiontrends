@@ -20,27 +20,6 @@ header{
     flex-direction: row;
 }
 
-.inputtopo{
-    width: 600px;
-    border: 2px solid black;
-    padding: 0px 10px;
-}
-
-.botaopesquisar{
-    background-color: white;
-    border: 2px solid black;
-    padding: 5px;
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 25px;
-    cursor: pointer;
-}
-
-.imagemdobotaopesquisar{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .botaologin{
     background-color: white;
     border: 2px solid black;
@@ -63,6 +42,34 @@ header{
 
 .imagemcarrinhocontainer{
     height: 35px;
+}
+
+.containerpesquisa{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.inputpesquisa{
+    width: 600px;
+    border: 2px solid black;
+    padding: 0px 10px;
+}
+
+.botaopesquisar{
+    background-color: white;
+    border: 2px solid black;
+    padding: 5px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.imagemdobotaopesquisar{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .containerprodutos{

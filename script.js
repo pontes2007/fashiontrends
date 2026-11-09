@@ -1,6 +1,6 @@
 const div = document.querySelector(".containerprodutos")
 const botaopesquisar = document.querySelector(".botaopesquisar")
-const input = document.querySelector(".inputtopo")
+const input = document.querySelector(".inputpesquisa")
 
 function converterReais(chave){
   return "R$" + (chave.toFixed(2)).toString()
@@ -68,4 +68,3 @@ function pesquisar(){
 }
 
 botaopesquisar.addEventListener("click", pesquisar)
-
