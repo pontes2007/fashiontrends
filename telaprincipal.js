@@ -6,13 +6,6 @@ function converterReais(chave){
   return "R$" + (chave.toFixed(2)).toString()
 }
 
-function dadosDoProduto(dados){
-  console.log(dados.nome)
-
-  sessionStorage.setItem("nome", dados.nome)
-  window.location.href = "produto.html"
-}
-
 function criarProduto(info){
   let novoProduto = document.createElement("div")
   let imagemcontainer = document.createElement("div")
@@ -35,7 +28,6 @@ function criarProduto(info){
   imagemcontainer.appendChild(imagememsi)
   novoProduto.appendChild(nomecontainer)
   novoProduto.appendChild(valorcontainer)
-  novoProduto.addEventListener("click", () => {dadosDoProduto(info)})
 }
 
 function compararTextos(comparado, referencia){
