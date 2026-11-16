@@ -40,7 +40,7 @@ function compararTextos(comparado, referencia){
 }
 
 function carregarProdutos(filtrar){
-  fetch("./produtos.json").then((response) => {
+  fetch("../produtos.json").then((response) => {
     response.json().then((produtos) => {
       produtos.map((produto) => {
         filtrar

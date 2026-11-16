@@ -11,7 +11,7 @@
       "max_dias_uteis": 6
     },
     "marca": "TechNova",
-    "imagem": "imagensdosprodutos/computador.png"
+    "imagem": "../imagensdosprodutos/computador.png"
   }, {
     "id": "PROD002",
     "nome": "Headset Bluetooth SoundMax",
@@ -24,7 +24,7 @@
       "max_dias_uteis": 5
     },
     "marca": "SoundMax",
-    "imagem": "imagensdosprodutos/fone.png"
+    "imagem": "../imagensdosprodutos/fone.png"
   }, {
     "id": "PROD003",
     "nome": "Smartphone Vision X12",
@@ -37,7 +37,7 @@
       "max_dias_uteis": 7
     },
     "marca": "VisionTech",
-    "imagem": "imagensdosprodutos/celular.png"
+    "imagem": "../imagensdosprodutos/celular.png"
   }, {
     "id": "PROD004",
     "nome": "Smartwatch Active S5",
@@ -50,7 +50,7 @@
       "max_dias_uteis": 4
     },
     "marca": "ActiveWear",
-    "imagem": "imagensdosprodutos/relogiodigital.png"
+    "imagem": "../imagensdosprodutos/relogiodigital.png"
   }, {
     "id": "PROD005",
     "nome": "Fone Bluetooth AirSound Mini",
@@ -63,7 +63,7 @@
       "max_dias_uteis": 5
     },
     "marca": "AirSound",
-    "imagem": "imagensdosprodutos/ipod.png"
+    "imagem": "../imagensdosprodutos/ipod.png"
   }, {
     "id": "PROD006",
     "nome": "Mouse Gamer Phantom RGB",
@@ -76,7 +76,7 @@
       "max_dias_uteis": 4
     },
     "marca": "Phantom Gaming",
-    "imagem": "imagensdosprodutos/mouse.png"
+    "imagem": "../imagensdosprodutos/mouse.png"
   }, {
     "id": "PROD007",
     "nome": "Teclado Mecânico RGB K87",
@@ -89,7 +89,7 @@
       "max_dias_uteis": 5
     },
     "marca": "KeyMaster",
-    "imagem": "imagensdosprodutos/teclado.png"
+    "imagem": "../imagensdosprodutos/teclado.png"
   }, {
     "id": "PROD008",
     "nome": "Mochila Urban Explorer",
@@ -102,7 +102,7 @@
       "max_dias_uteis": 6
     },
     "marca": "UrbanWay",
-    "imagem": "imagensdosprodutos/mochila.png"
+    "imagem": "../imagensdosprodutos/mochila.png"
   }, {
     "id": "PROD009",
     "nome": "Garrafa Térmica Steel 750",
@@ -115,7 +115,7 @@
       "max_dias_uteis": 5
     },
     "marca": "SteelLife",
-    "imagem": "imagensdosprodutos/garrafa.png"
+    "imagem": "../imagensdosprodutos/garrafa.png"
   }, {
     "id": "PROD010",
     "nome": "Caixa de Som Portable Bass",
@@ -128,7 +128,7 @@
       "max_dias_uteis": 5
     },
     "marca": "BassWave",
-    "imagem": "imagensdosprodutos/caixadesom.png"
+    "imagem": "../imagensdosprodutos/caixadesom.png"
   }, {
     "id": "PROD011",
     "nome": "Kit de Construção City Explorer",
@@ -141,7 +141,7 @@
       "max_dias_uteis": 7
     },
     "marca": "BuildFun",
-    "imagem": "imagensdosprodutos/lego.png"
+    "imagem": "../imagensdosprodutos/lego.png"
   }, {
     "id": "PROD012",
     "nome": "Livro Sapiens: Uma Breve História da Humanidade",
@@ -154,7 +154,7 @@
       "max_dias_uteis": 6
     },
     "marca": "Editora Horizonte",
-    "imagem": "imagensdosprodutos/livro.png"
+    "imagem": "../imagensdosprodutos/livro.png"
   }, {
     "id": "PROD013",
     "nome": "Moletom Basic Comfort",
@@ -167,7 +167,7 @@
       "max_dias_uteis": 6
     },
     "marca": "ComfortWear",
-    "imagem": "imagensdosprodutos/casaco.png",
+    "imagem": "../imagensdosprodutos/casaco.png",
     "variacoes": {
       "tamanhos": ["P", "M", "G", "GG"]
     }
@@ -183,7 +183,7 @@
       "max_dias_uteis": 5
     },
     "marca": "GameZone",
-    "imagem": "imagensdosprodutos/controledeps5.png"
+    "imagem": "../imagensdosprodutos/controledeps5.png"
   }, {
     "id": "PROD015",
     "nome": "Luminária Articulada Modern Desk",
@@ -196,6 +196,6 @@
       "max_dias_uteis": 5
     },
     "marca": "ModernLight",
-    "imagem": "imagensdosprodutos/lampada.png"
+    "imagem": "../imagensdosprodutos/lampada.png"
   }
 ]
