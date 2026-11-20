@@ -1,5 +1,14 @@
+:root{
+    --logotipo-cabecalho-textos: #111111;
+    --botoes-novidade-promocao: #E11D74;
+    --fundos-vitrine: #E8D5C4;
+    --status-disponivel: #7A9E7E;
+    --fundo-geral: #FFFBF7;
+}
+
 body{
     margin: 0;
+    background-color: var(--fundo-geral);
 }
 
 header{
@@ -9,26 +18,73 @@ header{
 
 .containertopo{
     display: flex;
-    background-color: #82ABEE;
+    background-color: var(--fundos-vitrine);
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     padding: 20px;
 }
 
 .conteudotopo{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.inputtopo{
+.containerlogo{
+    height: 45px;
+    margin-right: auto;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.botaologin{
+    background-color: var(--botoes-novidade-promocao);
+    color: var(--logotipo-cabecalho-textos);
+    border: 2px solid var(--logotipo-cabecalho-textos);
+    border-radius: 10px;
+    padding: 0px 20px;
+    margin: 0px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.containercarrinho{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--logotipo-cabecalho-textos);
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: var(--botoes-novidade-promocao);
+    cursor: pointer;
+}
+
+.imagemcarrinhocontainer{
+    height: 35px;
+    margin-right: 10px;
+}
+
+.containerpesquisa{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.inputpesquisa{
     width: 600px;
-    border: 2px solid black;
+    border: 2px solid var(--logotipo-cabecalho-textos);
+    color: var(--logotipo-cabecalho-textos);
+    background-color: var(--fundo-geral);
     padding: 0px 10px;
 }
 
 .botaopesquisar{
-    background-color: white;
-    border: 2px solid black;
+    background-color: var(--fundo-geral);
+    border: 2px solid var(--logotipo-cabecalho-textos);
     padding: 5px;
     height: 40px;
     margin-left: 5px;
@@ -41,33 +97,14 @@ header{
     max-height: 100%;
 }
 
-.botaologin{
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 0px 20px;
-    margin: 0px 30px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.containercarrinho{
-    display: flex;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 0px 10px;
-    background-color: #a7c5f7;
-    cursor: pointer;
-}
-
-.imagemcarrinhocontainer{
-    height: 35px;
+.alerta{
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .containerprodutos{
     display: grid;
-    background-color: #c6d3e7;
+    background-color: var(--fundos-vitrine);
     margin: 1%;
     grid-template-columns: repeat(auto-fit, 260px);
 }
@@ -79,8 +116,8 @@ header{
     flex-direction: column;
     padding: 20px;
     margin: 20px;
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid var(--logotipo-cabecalho-textos);
+    background-color: var(--fundo-geral);
     width: 200px;
     height: 300px;
     cursor: pointer;
@@ -98,8 +135,10 @@ header{
 
 .nomedoproduto{
     margin-top: 10px;
+    color: var(--logotipo-cabecalho-textos);
 }
 
 .valorproduto{
     margin-top: 10px;
+    color: var(--logotipo-cabecalho-textos);
 }
