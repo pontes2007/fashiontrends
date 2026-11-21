@@ -6,11 +6,6 @@
     --fundo-geral: #FFFBF7;
 }
 
-body{
-    margin: 0;
-    background-color: var(--fundo-geral);
-}
-
 header{
     position: sticky;
     top: 0;
