@@ -1,0 +1,65 @@
+:root{
+    --logotipo-cabecalho-textos: #111111;
+    --botoes-novidade-promocao: #E11D74;
+    --fundos-vitrine: #E8D5C4;
+    --status-disponivel: #7A9E7E;
+    --fundo-geral: #FFFBF7;
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fundos-vitrine);
+    box-shadow: 0 0 12px var(--botoes-novidade-promocao);
+}
+
+.logintext{
+    font-size: 50px;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+}
+
+.inputcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 10vh;
+    margin: 3vh 3vw;
+}
+
+.imageuser{
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 1vw;
+    opacity: 0.7;
+}
+
+input{
+    border: 0;
+    box-shadow: 0 0 5px;
+    height: 3vh;
+    align-self: center;
+    padding: 10px 15px;
+    width: 40vw;
+    background-color: rgba(255, 251, 247, 0.7);
+}
+
+.sendbutton{
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    padding: 2vh 7vw;
+    border: 0;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    background-color: var(--botoes-novidade-promocao);
+}
