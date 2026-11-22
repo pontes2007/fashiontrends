@@ -7,8 +7,8 @@ let usuarios = [
         "email": "fashionadm@fashiontrends.com",
         "senha": "frontend"
     }, {
-        "email": "sim@fashiontrends.com",
-        "senha": "opa"
+        "email": "primeirousuario@email.com",
+        "senha": "cliente123"
     }
 ]
 
@@ -26,7 +26,7 @@ function checarUsuario(email, senha){
     if (email == "" || senha == ""){
         verification.innerHTML = "Ambos os campos precisam estar preenchidos"
     } else if (analizarEmail(email) && usuarios.find((u) => u.email == email && u.senha == senha)){
-        console.log(pegarNome(email))
+        verification.innerHTML = ""
         sessionStorage.setItem("nomedeusuario", pegarNome(email))
         window.location.href = "/telaprincipal/index.html"
     } else if (!analizarEmail(email)){
