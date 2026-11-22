@@ -26,6 +26,7 @@
     font-size: 50px;
     margin-top: 5vh;
     margin-bottom: 7vh;
+    color: var(--logotipo-cabecalho-textos);
 }
 
 .inputcontainer{
@@ -68,4 +69,8 @@ input{
 .createaccount{
     font-size: 20px;
     margin-bottom: 2vh;
+}
+
+#verificationtext{
+    color: var(--logotipo-cabecalho-textos);
 }
