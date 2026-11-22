@@ -56,10 +56,16 @@ input{
 
 .sendbutton{
     margin-top: 3vh;
-    margin-bottom: 6vh;
+    margin-bottom: 2vh;
     padding: 2vh 7vw;
+    font-size: 17px;
     border: 0;
     box-shadow: 0 0 5px;
     border-radius: 10px;
     background-color: var(--botoes-novidade-promocao);
+}
+
+.createaccount{
+    font-size: 20px;
+    margin-bottom: 2vh;
 }

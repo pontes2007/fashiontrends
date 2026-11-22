@@ -2,8 +2,8 @@ const button = document.getElementById("add")
 
 let usuarios = [
     {
-        "nome": "João",
-        "senha": "ymparilla"
+        "nome": "fashiontrendsadm@fashiontrends.com",
+        "senha": "frontend"
     }
 ]
 
