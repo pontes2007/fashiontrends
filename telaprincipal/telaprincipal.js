@@ -102,9 +102,10 @@ function pesquisar(){
   div.innerHTML = ''
   carregarProdutos(true)
 }
-console.log(sessionStorage.getItem("nomedeusuario"))
+
 if (!(sessionStorage.getItem("nomedeusuario") == null)) {
   perfil.innerHTML = sessionStorage.getItem("nomedeusuario")
 }
+
 botaopesquisar.addEventListener("click", pesquisar)
 login.addEventListener("click", () => {window.location.href = "../login/login.html"})
